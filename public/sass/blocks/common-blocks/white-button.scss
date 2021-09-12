@@ -1,0 +1,15 @@
+.white-button {
+  @include font-special(600);
+  @include font-size(14px, 19px);
+
+  padding: 16.5px 20px;
+  color: $basic-red-color;
+  background-color: $basic-white-color;
+  border: 1px solid $basic-red-color;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $basic-red-color;
+    color: $basic-white-color;
+  }
+}

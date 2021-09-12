@@ -1,0 +1,13 @@
+.page-main {
+  grid-row: 2 / 3;
+}
+
+.page-main__wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content min-content;
+  column-gap: 54px;
+  width: 1175px;
+  margin: 0 auto;
+}

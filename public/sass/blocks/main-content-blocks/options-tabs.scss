@@ -1,0 +1,30 @@
+.options-tabs {
+  margin: 0;
+  padding: 0;
+}
+
+.options-tabs__tabs-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 10px 6px;
+  padding: 0;
+}
+
+.options-tabs__tab {
+  @include font-special(400);
+  @include font-size(20px, 27px);
+
+  color: $basic-gray-color;
+  min-width: 195px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $bright-gray-color;
+}
+
+.options-tabs__tabs-wrapper>input[type="radio"]:checked+label {
+  color: $basic-white-color;
+  background-color: $basic-red-color;
+  border: none;
+}

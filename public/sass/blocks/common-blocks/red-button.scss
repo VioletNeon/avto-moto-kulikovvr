@@ -1,0 +1,13 @@
+.red-button {
+  @include font-special(600);
+  @include font-size(14px, 19px);
+
+  padding: 16.5px 20px;
+  color: $basic-white-color;
+  text-transform: uppercase;
+  background-color: $basic-red-color;
+
+  &:hover {
+    background-color: $deep-red-color;
+  }
+}

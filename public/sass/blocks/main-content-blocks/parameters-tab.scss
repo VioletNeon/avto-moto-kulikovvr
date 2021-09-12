@@ -1,0 +1,27 @@
+.parameters-tab {
+  padding: 0;
+  margin: 0 0 140px 0;
+}
+
+.parameters-tab__list {
+  @include reset-list-style();
+
+  width: 570px;
+  margin: 0 0 0 8px;
+  padding: 0;
+}
+
+.parameters-tab__item {
+  @include font-special(400);
+  @include font-size(16px, 22px);
+
+  color: $basic-gray-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid $bright-gray-color;
+}
+
+.parameters-tab__item span {
+  padding: 25px 0 13px 0;
+}
