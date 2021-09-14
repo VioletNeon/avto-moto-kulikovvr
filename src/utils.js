@@ -9,7 +9,7 @@ dayjs.extend(relativeTime);
 dayjs.locale('ru');
 
 const getDuration = (dateFrom) => {
-    let seconds = dayjs().diff(dateFrom, 's');
+    let seconds = dayjs().diff(dayjs(dateFrom), 's');
     return dayjs.duration({seconds: -seconds}).humanize(true);
 };
 

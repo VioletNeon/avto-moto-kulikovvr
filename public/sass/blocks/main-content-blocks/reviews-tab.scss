@@ -2,7 +2,7 @@
   width: inherit;
   position: relative;
   padding: 0;
-  margin: 30px 0 140px 6px;
+  margin: 30px 0 138px 6px;
   display: flex;
   border: none;
 }
@@ -14,7 +14,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 25px;
 }
 
 .reviews-tab__item {
@@ -27,7 +27,7 @@
   @include font-special(600);
   @include font-size(20px, 27px);
 
-  margin: 0 0 19px 0;
+  margin: 0 0 13px 0;
   padding: 0;
   color: $basic-gray-color;
   width: max-content;
@@ -36,10 +36,10 @@
 .reviews-tab__quality-marks-list {
   @include reset-list-style();
 
-  margin: 0 0 20px 0;
+  margin: 0 0 12px 0;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 12px;
 }
 
 .reviews-tab__quality-mark-item {
@@ -50,7 +50,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 5px;
 }
 
 .reviews-tab__quality-mark {
@@ -87,7 +87,7 @@
 
   width: max-content;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 19px;
 }
 
 .reviews-tab__comment-wrapper {
@@ -96,8 +96,8 @@
   color: $basic-black-color;
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
-  margin: 0 0 25px 0;
+  row-gap: 7px;
+  margin: 0 0 20px 0;
 }
 
 .reviews-tab__comment-title {
@@ -117,7 +117,7 @@
 
   color: $basic-black-color;
   opacity: 0.4;
-  margin: 0 20px 0 0;
+  margin: 0 45px 0 0;
 }
 
 .reviews-tab__answer-wrapper {
@@ -136,20 +136,20 @@
   position: absolute;
   top: 0;
   left: 100%;
-  width: max-content;
-  transform: translate(-169px, 0);
+  width: 189px;
+  transform: translate(-195px, 0);
 }
 
 .reviews-tab__rating {
   display: flex;
-  margin: 0 0 20px 0;
+  margin: 0 0 25px 0;
 }
 
 .reviews-tab__rating p {
   @include font-special(400);
   @include font-size(15px, 20px);
 
-  margin: 0;
+  margin: 0 0 0 8px;
   padding: 0;
   color: $basic-red-color;
 }
@@ -157,10 +157,12 @@
 .reviews-tab__stars {
   width: 98px;
   height: 16px;
+  padding: 0 0 0 5px;
   margin: 0 20px 0 0;
 }
 
 .reviews-tab__stars::before {
+  padding: 0 0 0 5px;
   width: 98px;
   background-size: 98px 16px;
 }
@@ -172,4 +174,5 @@
 .reviews-tab__stars span::before {
   width: 98px;
   background-size: 98px 16px;
+  margin: 0 0 0 5px;
 }

@@ -7,7 +7,7 @@ function Header() {
       <div className="page-header__wrapper">
         <div className="page-header__logo-wrapper">
           <Link className="page-header__logo-link" to="#">
-            <img className="page-header__logo" src={'img/logo.svg'} width="134" height="55" alt="Авто Мото"/>
+            <img className="page-header__logo" src={'img/logo.svg'} width="134" height="55" alt="Логотип Авто Мото"/>
           </Link>
         </div>
         <nav className="main-nav">

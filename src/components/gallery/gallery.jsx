@@ -15,7 +15,7 @@ function Gallery() {
     } else if (evt.target.name === GalleryButtonNames.FORWARD) {
       setNumber(number + 1);
     }
-  }
+  };
 
   return (
     <section className="gallery">

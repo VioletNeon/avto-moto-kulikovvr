@@ -22,7 +22,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 16px;
-  margin: 0 0 40px 10px;
+  margin: 0 0 37px 10px;
   max-width: 510px;
 }
 
@@ -47,7 +47,7 @@
 .offer-info-section__price-wrapper {
   display: flex;
   flex-direction: row;
-  margin: 0 0 35px 5px;
+  margin: 0 0 37px 5px;
   padding: 0;
 }
 
@@ -56,7 +56,7 @@
   @include font-size(35px, 48px);
 
   color: $basic-gray-color;
-  margin: 0 31px 0 0;
+  margin: 0 25px 0 0;
   padding: 0;
 }
 
@@ -87,11 +87,12 @@
 
 .offer-info-section__bid-link {
   margin: 0 0 16px 0;
-  width: max-content;
+  width: 196px;
+  display: flex;
+  justify-content: center;
 }
 
 .offer-info-section__credit-link {
-
-  width: max-content;
+  width: 222px;
   text-transform: uppercase;
 }
