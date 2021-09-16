@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function ParametersTab({value}) {
   return (
-    <div className={value === 1 ? 'parameters-tab' : 'visually-hidden'} id="txt_1">
+    <div className={`parameters-tab ${value === '1' ? '' : 'visually-hidden'}`} id="txt_1">
       <h3 className="visually-hidden">Характеристики</h3>
       <ul className="parameters-tab__list">
         <li className="parameters-tab__item">
@@ -40,7 +40,7 @@ function ParametersTab({value}) {
 }
 
 ParametersTab.propTypes = {
-  value: PropTypes.number.isRequired,
+  value: PropTypes.string.isRequired,
 };
 
 export default ParametersTab;

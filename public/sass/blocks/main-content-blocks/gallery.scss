@@ -37,7 +37,7 @@
 
 .gallery__back-button,
 .gallery__forward-button {
-  border: 1px solid #D7D9DF;
+  border: 1px solid $bright-gray-color;
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -45,11 +45,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
-.gallery__back-button:disabled svg path,
-.gallery__forward-button:disabled svg path {
-  stroke: $bright-gray-color;
+.gallery__back-button {
+  background: center no-repeat url('../../../../src/img/arrow-to-left.svg');
+
+  &:disabled {
+    background: center no-repeat url('../../../../src/img/arrow-to-left-disabled.svg');
+  }
+}
+
+.gallery__forward-button {
+  background: center no-repeat url('../../../../src/img/arrow-to-right.svg');
+
+  &:disabled {
+    background: center no-repeat url('../../../../src/img/arrow-to-right-disabled.svg');
+  }
 }
 
 .gallery__image-thumbnails-list {
@@ -59,3 +71,4 @@
   flex-direction: row;
   column-gap: 25px;
 }
+

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import {getDuration} from '../../utils';
 
-const ONE_STAR_PERCENT_PART = 20;
+const ONE_STAR_PERCENT_PART = 22;
 
 function Review({review}) {
   const {
@@ -20,10 +20,10 @@ function Review({review}) {
       <p className="reviews-tab__name">{nameUser}</p>
       <ul className="reviews-tab__quality-marks-list">
         <li className="reviews-tab__quality-mark-item">
-          <span className="reviews-tab__quality-mark reviews-tab__quality-mark--plus">Достоинства</span>
+          <span className="reviews-tab__quality-mark reviews-tab__quality-mark-item--plus">Достоинства</span>
           <p className="reviews-tab__quality-mark-description">{merit}</p>
         </li>
-        <li className="reviews-tab__quality-mark-item reviews-tab__quality-mark--minus">
+        <li className="reviews-tab__quality-mark-item reviews-tab__quality-mark-item--minus">
           <span className="reviews-tab__quality-mark">Недостатки</span>
           <p className="reviews-tab__quality-mark-description">{flaw}</p>
         </li>

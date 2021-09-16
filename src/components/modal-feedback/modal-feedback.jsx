@@ -11,46 +11,46 @@ function ModalFeedback({onModalStateSet, addNewReviews}) {
   const comment = useRef(null);
   const [rating, setRating] = useState(0);
 
-  const handleFormSubmit = (evt) => {
+  const onFormSubmit = (evt) => {
     evt.preventDefault();
     const newUserReview = {
       nameUser: nameUser.current.value,
       merit: merit.current.value,
       flaw: flaw.current.value,
       comment: comment.current.value,
-      rating: rating,
+      rating: +rating,
       date: dayjs().format('YYYY-MM-DDTHH:mm:ss'),
     };
     addNewReviews(newUserReview);
   };
 
-  const handleRatingChange = (evt) => {
+  const onRatingChange = (evt) => {
     setRating(evt.target.value);
   };
 
-  const handleEscKeyDown = (evt) => {
-    if (evt.keyCode === 27) {
+  const onEscKeyDown = (evt) => {
+    if (evt.key === 'Escape' || evt.key === 'Esc') {
       evt.preventDefault();
       onModalStateSet();
     }
   };
 
-  const handleOverlayModalClick = (evt) => {
+  const onOverlayModalClick = (evt) => {
     if (evt.target.className === MODAL_FEEDBACK_CLASS_NAME) {
       onModalStateSet();
     }
   };
 
   useEffect(() => {
-    document.addEventListener('keydown', handleEscKeyDown);
-    return () => document.removeEventListener('keydown', handleEscKeyDown);
+    document.addEventListener('keydown', onEscKeyDown);
+    return () => document.removeEventListener('keydown', onEscKeyDown);
   });
 
   return (
-    <div className="modal-feedback" onClick={handleOverlayModalClick}>
+    <div className="modal-feedback" onClick={onOverlayModalClick}>
       <div className="modal-feedback__wrapper">
         <h2 className="modal-feedback__tittle">Оставить отзыв</h2>
-        <form className="modal-feedback__form" method="post" onSubmit={handleFormSubmit}>
+        <form className="modal-feedback__form" method="post" onSubmit={onFormSubmit}>
           <ul className="modal-feedback__list">
             <li className="modal-feedback__item">
               <label className="modal-feedback__description" htmlFor="name-enter">
@@ -75,7 +75,7 @@ function ModalFeedback({onModalStateSet, addNewReviews}) {
           </div>
           <div className="form-rating">
             <p>Оцените товар:</p>
-            <div className="form-rating__wrapper" onChange={handleRatingChange}>
+            <div className="form-rating__wrapper" onChange={onRatingChange}>
               <input className="form-rating__input visually-hidden" name="rating" value="5" id="5-stars" type="radio"/>
               <label htmlFor="5-stars" className="form-rating__label" title="perfect">
                 <svg className="form-rating__star-image" viewBox="0 0 17 16" width="27" height="27">

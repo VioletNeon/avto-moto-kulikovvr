@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function ContactsTab({value}) {
   return (
-    <div className={value === 3 ? 'contacts-tab' : 'visually-hidden'} id="txt_3">
+    <div className={`contacts-tab ${value === '3' ? '' : 'visually-hidden'}`} id="txt_3">
       <h3 className="visually-hidden">Контакты</h3>
       <ul className="contacts-tab__list">
         <li className="contacts-tab__item">
@@ -39,7 +39,7 @@ function ContactsTab({value}) {
 }
 
 ContactsTab.propTypes = {
-  value: PropTypes.number.isRequired,
+  value: PropTypes.string.isRequired,
 };
 
 export default ContactsTab;

@@ -34,10 +34,10 @@ function ReviewsTab({value}) {
 
   return (
     <>
-      <div className={value === 2 ? 'reviews-tab' : 'visually-hidden'} id="txt_2">
+      <div className={`reviews-tab ${value === '2' ? '' : 'visually-hidden'}`} id="txt_2">
         <h3 className="visually-hidden">Отзывы</h3>
         <ul className="reviews-tab__list">
-          {reviews.map((review) => <Review review={review} key={review.nameUser}/>)}
+          {reviews.map((review) => <Review review={review} key={review.nameUser + review.date}/>)}
         </ul>
         <Link className="reviews-tab__leave-review-link white-button" onClick={onModalStateSet} to="">Оставить отзыв</Link>
       </div>
@@ -47,7 +47,7 @@ function ReviewsTab({value}) {
 }
 
 ReviewsTab.propTypes = {
-  value: PropTypes.number.isRequired,
+  value: PropTypes.string.isRequired,
 };
 
 export default ReviewsTab;
