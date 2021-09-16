@@ -31,7 +31,8 @@ function ContactsTab({value}) {
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad6fb545ae93a65d44e5a0a2f6f916f109943df6da8465d25b3675cd8ae0740d3&amp;source=constructor"
           width="431"
           height="271"
-          frameBorder="0">
+          frameBorder="0"
+        >
         </iframe>
       </div>
     </div>

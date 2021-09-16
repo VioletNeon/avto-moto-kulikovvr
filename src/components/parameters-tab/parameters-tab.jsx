@@ -36,7 +36,7 @@ function ParametersTab({value}) {
         </li>
       </ul>
     </div>
-   );
+  );
 }
 
 ParametersTab.propTypes = {

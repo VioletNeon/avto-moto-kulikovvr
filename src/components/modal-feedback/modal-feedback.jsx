@@ -67,7 +67,7 @@ function ModalFeedback({onModalStateSet, addNewReviews}) {
                 <input id="flaw-enter" ref={flaw} type="text" name="flaw" placeholder="Недостатки"/>
               </label>
             </li>
-            </ul>
+          </ul>
           <div className="modal-feedback__comment-wrapper">
             <label className="visually-hidden" htmlFor="comment-field">Комментарий</label>
             <textarea rows="4" cols="70" ref={comment} maxLength="450" required name="comment-field" id="message-field" placeholder="Комментарий">

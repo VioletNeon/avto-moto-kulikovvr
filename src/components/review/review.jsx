@@ -12,7 +12,7 @@ function Review({review}) {
     flaw,
     comment,
     rating,
-    date
+    date,
   } = review;
 
   return (
@@ -59,7 +59,7 @@ Review.propTypes = {
       comment: PropTypes.string.isRequired,
       rating: PropTypes.number.isRequired,
       date: PropTypes.string.isRequired,
-    }
+    },
   ).isRequired,
 };
 
