@@ -3,6 +3,7 @@ import dayjs from 'dayjs';
 import PropTypes from 'prop-types';
 
 const MODAL_FEEDBACK_CLASS_NAME = 'modal-feedback';
+const KEY_ESCAPE_CODE = 27;
 
 function ModalFeedback({onModalStateSet, addNewReviews}) {
   const nameUser = useRef(null);
@@ -29,7 +30,7 @@ function ModalFeedback({onModalStateSet, addNewReviews}) {
   };
 
   const onEscKeyDown = (evt) => {
-    if (evt.key === 'Escape' || evt.key === 'Esc') {
+    if (evt.keyCode === KEY_ESCAPE_CODE) {
       evt.preventDefault();
       onModalStateSet();
     }
