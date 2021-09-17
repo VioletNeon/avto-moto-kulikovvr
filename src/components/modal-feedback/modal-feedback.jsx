@@ -51,7 +51,7 @@ function ModalFeedback({onModalStateSet, addNewReviews}) {
     <div className="modal-feedback" onClick={onOverlayModalClick}>
       <div className="modal-feedback__wrapper">
         <h2 className="modal-feedback__tittle">Оставить отзыв</h2>
-        <form className="modal-feedback__form" method="post" onSubmit={onFormSubmit}>
+        <form className="modal-feedback__form" method="post" onSubmit={onFormSubmit} action='https://echo.htmlacademy.ru/'>
           <ul className="modal-feedback__list">
             <li className="modal-feedback__item">
               <label className="modal-feedback__description" htmlFor="name-enter">

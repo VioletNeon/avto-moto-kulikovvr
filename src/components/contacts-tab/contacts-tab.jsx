@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 function ContactsTab({value}) {
   return (
@@ -16,11 +17,11 @@ function ContactsTab({value}) {
         </li>
         <li className="contacts-tab__item">
           <span className="contacts-tab__block-title">Телефон</span>
-          <p>8 (800) 333-55-99</p>
+          <Link to='tel:+78003335599'>8 (800) 333-55-99</Link>
         </li>
         <li className="contacts-tab__item">
           <span className="contacts-tab__block-title">E-mail</span>
-          <p>info@avto-moto.ru</p>
+          <Link to="mailto:info@avto-moto.ru">info@avto-moto.ru</Link>
         </li>
       </ul>
       <div className="contacts-tab__map-wrapper">

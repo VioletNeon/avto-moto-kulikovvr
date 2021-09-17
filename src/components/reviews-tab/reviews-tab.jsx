@@ -30,6 +30,7 @@ function ReviewsTab({value}) {
 
   const onModalStateSet = () => {
     setModalState(!isModalOpen);
+    document.body.style.overflow = isModalOpen ? '' : 'hidden';
   };
 
   return (

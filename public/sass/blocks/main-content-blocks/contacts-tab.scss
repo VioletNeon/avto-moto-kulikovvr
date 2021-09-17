@@ -28,7 +28,8 @@
   width: max-content;
 }
 
-.contacts-tab__item p {
+.contacts-tab__item p,
+.contacts-tab__item a {
   @include font-special(600);
   @include font-size(14px, 19px);
 

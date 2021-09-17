@@ -21,7 +21,7 @@ function Gallery() {
     <section className="gallery">
       <h2 className="visually-hidden">Фотографии Марпех 11</h2>
       <div className="gallery__frame-wrapper">
-        <img src={`img/car-${number}.jpg`} alt="Фотография Марпех 11"/>
+        <img src={`img/car-${number}.jpg`} alt="Фотография Марпех 11" width="600" height="375"/>
         <span className="gallery__new-model-mark">New model</span>
       </div>
       <div className="gallery__thumbnails-wrapper">

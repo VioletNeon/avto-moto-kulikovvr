@@ -47,6 +47,7 @@
 .offer-info-section__price-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 0 0 37px 5px;
   padding: 0;
 }
@@ -66,7 +67,6 @@
 
   vertical-align: center;
   position: relative;
-  width: max-content;
   color: $basic-opacity-gray-color;
   padding: 0 10px 0 10px;
   margin: auto 0;
