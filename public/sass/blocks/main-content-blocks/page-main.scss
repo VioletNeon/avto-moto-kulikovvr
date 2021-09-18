@@ -8,6 +8,7 @@
   grid-template-columns: min-content 1fr;
   grid-template-rows: min-content min-content;
   column-gap: 54px;
-  width: 1175px;
+  max-width: 1175px;
+  min-width: 1024px;
   margin: 0 auto;
 }
