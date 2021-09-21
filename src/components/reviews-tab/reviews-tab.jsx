@@ -36,10 +36,10 @@ function ReviewsTab({value}) {
     <>
       <div className={`reviews-tab ${value === 'tab_2' ? '' : 'visually-hidden'}`} id="txt_2">
         <h3 className="visually-hidden">Отзывы</h3>
+        <Link className="reviews-tab__leave-review-link white-button" onClick={onModalStateSet} to="">Оставить отзыв</Link>
         <ul className="reviews-tab__list">
           {reviews.map((review) => <Review review={review} key={review.nameUser + review.date}/>)}
         </ul>
-        <Link className="reviews-tab__leave-review-link white-button" onClick={onModalStateSet} to="">Оставить отзыв</Link>
       </div>
       {isModalOpen && <ModalFeedback onModalStateSet={onModalStateSet} addNewReviews={addNewReviews} />}
     </>

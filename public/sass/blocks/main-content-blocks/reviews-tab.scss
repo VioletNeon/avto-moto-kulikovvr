@@ -31,7 +31,7 @@
   margin: 0 0 13px 0;
   padding: 0;
   color: $basic-gray-color;
-  width: max-content;
+  word-wrap: anywhere;
 }
 
 .reviews-tab__quality-marks-list {
@@ -139,7 +139,6 @@
   top: -2px;
   left: 100%;
   width: max-content;
-  height: max-content;
   letter-spacing: 0.12em;
   transform: translate(-192px, 0);
 }
