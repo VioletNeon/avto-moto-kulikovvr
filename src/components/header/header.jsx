@@ -6,7 +6,7 @@ function Header() {
     <header className="page-header">
       <div className="page-header__wrapper">
         <div className="page-header__logo-wrapper">
-          <Link className="page-header__logo-link" to="#">
+          <Link className="page-header__logo-link" to="#" tabIndex="-1">
             <img className="page-header__logo" src={'img/logo.svg'} width="134" height="55" alt="Логотип Авто Мото"/>
           </Link>
         </div>

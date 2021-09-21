@@ -44,7 +44,7 @@
 
   text-align: center;
   color: $basic-gray-color;
-  margin: 32px 0 43px 0;
+  margin: 30px 0 47px 0;
 }
 
 .modal-feedback__list {
@@ -55,7 +55,7 @@
   width: 300px;
   display: flex;
   flex-direction: column;
-  row-gap: 18px;
+  row-gap: 16px;
 }
 
 .modal-feedback__item {
@@ -117,13 +117,15 @@
 
 .modal-feedback__button-send-comment {
   border: none;
-  width: 190px;
+  width: max-content;
+  letter-spacing: 0.12em;
+  cursor: pointer;
 }
 
 .modal-feedback__modal-close-button {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 22px;
+  right: 22px;
   width: 22px;
   height: 22px;
   background-color: transparent;

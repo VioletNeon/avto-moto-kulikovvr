@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 function ContactsTab({value}) {
   return (
-    <div className={`contacts-tab ${value === '3' ? '' : 'visually-hidden'}`} id="txt_3">
+    <div className={`contacts-tab ${value === 'tab_3' ? '' : 'visually-hidden'}`} id="txt_3">
       <h3 className="visually-hidden">Контакты</h3>
       <ul className="contacts-tab__list">
         <li className="contacts-tab__item">

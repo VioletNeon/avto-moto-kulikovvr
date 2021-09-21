@@ -25,17 +25,16 @@ function ReviewsTab({value}) {
     const updatedReviews = [...reviews, newReview];
     setLocaleStorageReviews(updatedReviews);
     localStorage.setItem('reviews', JSON.stringify(updatedReviews));
-    setModalState(!isModalOpen);
   };
 
   const onModalStateSet = () => {
     setModalState(!isModalOpen);
-    document.body.style.overflow = isModalOpen ? '' : 'hidden';
+    document.body.style.overflow = isModalOpen ? 'visible' : 'hidden';
   };
 
   return (
     <>
-      <div className={`reviews-tab ${value === '2' ? '' : 'visually-hidden'}`} id="txt_2">
+      <div className={`reviews-tab ${value === 'tab_2' ? '' : 'visually-hidden'}`} id="txt_2">
         <h3 className="visually-hidden">Отзывы</h3>
         <ul className="reviews-tab__list">
           {reviews.map((review) => <Review review={review} key={review.nameUser + review.date}/>)}

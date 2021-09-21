@@ -25,7 +25,7 @@ function Gallery() {
         <span className="gallery__new-model-mark">New model</span>
       </div>
       <div className="gallery__thumbnails-wrapper">
-        <button className="gallery__back-button" name={GalleryButtonNames.BACK} type="button" disabled={number === 1} onClick={onButtonArrowClick}>
+        <button className="gallery__back-button" name={GalleryButtonNames.BACK} aria-label="Вернутся к предыдущей фотографии" type="button" disabled={number === 1} onClick={onButtonArrowClick}>
         </button>
         <ul className="gallery__image-thumbnails-list">
           <li className="gallery__image-thumbnails-item">
@@ -38,7 +38,7 @@ function Gallery() {
             <img src={'img/car-3.jpg'} width="128" height="80" alt="Фотография Марпех 11"/>
           </li>
         </ul>
-        <button className="gallery__forward-button" name={GalleryButtonNames.FORWARD} type="button" disabled={number === IMAGE_COUNT} onClick={onButtonArrowClick}>
+        <button className="gallery__forward-button" name={GalleryButtonNames.FORWARD} aria-label="Перейти к следующей фотографии" type="button" disabled={number === IMAGE_COUNT} onClick={onButtonArrowClick}>
         </button>
       </div>
     </section>

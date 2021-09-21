@@ -23,6 +23,10 @@
   border: 1px solid $bright-gray-color;
 }
 
+.options-tabs__tabs-wrapper>input[type="radio"]+label {
+  cursor: pointer;
+}
+
 .options-tabs__tabs-wrapper>input[type="radio"]:hover+label {
   color: $basic-white-color;
   background-color: $basic-red-color;

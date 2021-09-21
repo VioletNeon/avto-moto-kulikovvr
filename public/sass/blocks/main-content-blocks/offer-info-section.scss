@@ -87,12 +87,14 @@
 
 .offer-info-section__bid-link {
   margin: 0 0 16px 0;
-  width: 196px;
+  letter-spacing: 0.12em;
+  width: max-content;
   display: flex;
   justify-content: center;
 }
 
 .offer-info-section__credit-link {
-  width: 222px;
+  width: max-content;
   text-transform: uppercase;
+  letter-spacing: 0.12em;
 }

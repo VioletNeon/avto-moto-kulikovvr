@@ -7,18 +7,19 @@
 
 .page-header__wrapper {
   display: flex;
-  max-width: 1175px;
+  max-width: 1195px;
   min-width: 1024px;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 10px 0 10px;
   column-gap: 70px;
 }
 
 .page-header__logo-wrapper {
-  width: max-content;
-  padding: 0 0 0 7px;
-  margin: auto 0;
+  padding: 5px 0 0 7px;
+  margin: 10px 0 0 0;
+  min-width: 134px;
+  min-height: 55px;
 }
 
 .page-header__logo-link {
