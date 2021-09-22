@@ -14,5 +14,6 @@
   margin: 0 auto;
   padding: 0;
   display: grid;
+  box-sizing: border-box;
   grid-template-rows: max-content min-content min-content;
 }
