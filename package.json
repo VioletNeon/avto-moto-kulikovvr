@@ -33,14 +33,19 @@
   },
   "browserslist": {
     "production": [
-      ">1%",
+      ">2%",
       "not dead",
       "not op_mini all"
     ],
+    "modern": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 3 safari version"
+    ],
     "development": [
-      "last 2 chrome version",
-      "last 2 firefox version",
-      "last 8 safari version"
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 3 safari version"
     ]
   },
   "devDependencies": {
